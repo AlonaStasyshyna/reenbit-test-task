@@ -5,7 +5,7 @@ export const CharacterItem = ({ id, name, species, image }) => {
 
   return (
     <li>
-      <Link to={`/${id}`} state={{ from: location }}>
+      <Link to={`/characters/${id}`} state={{ from: location }}>
         <img src={image} alt={name} />
         <div>
           <h1>{name}</h1>
