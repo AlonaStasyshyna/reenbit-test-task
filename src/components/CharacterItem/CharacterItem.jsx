@@ -1,11 +1,17 @@
-export const CharacterItem = ({ name, species, image }) => {
+import { Link, useLocation } from 'react-router-dom';
+
+export const CharacterItem = ({ id, name, species, image }) => {
+  const location = useLocation();
+
   return (
     <li>
-      <img src={image} alt={name} />
-      <div>
-        <h1>{name}</h1>
-        <p>{species}</p>
-      </div>
+      <Link to={`/${id}`} state={{ from: location }}>
+        <img src={image} alt={name} />
+        <div>
+          <h1>{name}</h1>
+          <p>{species}</p>
+        </div>
+      </Link>
     </li>
   );
 };

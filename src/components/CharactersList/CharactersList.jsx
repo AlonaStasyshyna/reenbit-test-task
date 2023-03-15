@@ -4,7 +4,13 @@ export const CharactersList = ({ characters }) => {
   return (
     <ul>
       {characters.map(({ id, name, species, image }) => (
-        <CharacterItem key={id} name={name} species={species} image={image} />
+        <CharacterItem
+          key={id}
+          id={id}
+          name={name}
+          species={species}
+          image={image}
+        />
       ))}
     </ul>
   );

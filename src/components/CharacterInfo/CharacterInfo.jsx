@@ -1,30 +1,32 @@
-export const CharacterInfo = () => {
+export const CharacterInfo = ({
+  character: { name, status, species, type, gender, image, origin },
+}) => {
   return (
     <>
-      {/* <img src="" alt="" /> */}
-      <h1>a</h1>
-      <p>b</p>
+      <img src={image} alt={name} />
+      <h1>{name}</h1>
+      <p>Informations</p>
 
       <ul>
         <li>
           Gender
-          <span></span>
+          <span>{gender}</span>
         </li>
         <li>
           Status
-          <span></span>
+          <span>{status}</span>
         </li>
         <li>
           Specie
-          <span></span>
+          <span>{species}</span>
         </li>
         <li>
           Origin
-          <span></span>
+          <span>{origin.name}</span>
         </li>
         <li>
           Type
-          <span></span>
+          <span>{type}</span>
         </li>
       </ul>
     </>
