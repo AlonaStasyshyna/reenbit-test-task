@@ -1,11 +1,25 @@
 import searchIcon from '../../images/search-icon.svg';
 
-export const SearchForm = () => {
+export const SearchForm = ({ query, handleChange }) => {
+  const changeInput = e => {
+    let { value } = e.target;
+    handleChange(value.toLowerCase().trim());
+  };
+
+  const formSubmit = e => {
+    e.preventDefault();
+  };
+
   return (
-    <form>
+    <form onSubmit={formSubmit}>
       <label>
-        Filter by name...
-        <input type="text" />
+        <input
+          type="text"
+          name="query"
+          value={query}
+          onChange={changeInput}
+          placeholder="Filter by name..."
+        />
       </label>
 
       <button type="submit">

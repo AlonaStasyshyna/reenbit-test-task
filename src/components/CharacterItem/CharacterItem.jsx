@@ -1,9 +1,11 @@
-export const CharacterItem = () => {
-  <li>
-    {/* <img src="" alt="" /> */}
-    <div>
-      <h1>a</h1>
-      <p>b</p>
-    </div>
-  </li>;
+export const CharacterItem = ({ name, species, image }) => {
+  return (
+    <li>
+      <img src={image} alt={name} />
+      <div>
+        <h1>{name}</h1>
+        <p>{species}</p>
+      </div>
+    </li>
+  );
 };
