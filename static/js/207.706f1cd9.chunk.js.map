@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/207.706f1cd9.chunk.js","mappings":"0JAIA,UAJsB,WACpB,OAAO,+CACR,C","sources":["pages/CharacterPage/CharacterPage.jsx"],"sourcesContent":["const СharacterPage = () => {\n  return <div>СharacterPage</div>;\n};\n\nexport default СharacterPage;\n"],"names":[],"sourceRoot":""}
