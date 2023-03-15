@@ -8,4 +8,5 @@ export const charactersMapper = characters =>
     }))
     .sort((firstCharacter, secondCharacter) =>
       firstCharacter.name.localeCompare(secondCharacter.name)
-    );
+    )
+    .slice(0, 8);
