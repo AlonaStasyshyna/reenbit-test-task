@@ -25,7 +25,10 @@ const HomePage = () => {
           setError(null);
           setCharacters(res);
         })
-        .catch(setError)
+        .catch(err => {
+          setCharacters([]);
+          setError(err);
+        })
         .finally(setIsLoading(false));
     } else {
       getCharacters()
