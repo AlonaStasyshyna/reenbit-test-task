@@ -1,4 +1,4 @@
-import searchIcon from '../../images/search-icon.svg';
+import { Button, Form, Input } from './SearchForm.styled';
 
 export const SearchForm = ({ query, handleChange }) => {
   const changeInput = e => {
@@ -11,22 +11,16 @@ export const SearchForm = ({ query, handleChange }) => {
   };
 
   return (
-    <form onSubmit={formSubmit}>
-      <label>
-        <input
-          type="text"
-          name="query"
-          value={query}
-          onChange={changeInput}
-          placeholder="Filter by name..."
-        />
-      </label>
+    <Form onSubmit={formSubmit}>
+      <Input
+        type="text"
+        name="query"
+        value={query}
+        onChange={changeInput}
+        placeholder="Filter by name..."
+      />
 
-      <button type="submit">
-        <svg width="24" height="24">
-          <use href={searchIcon}></use>
-        </svg>
-      </button>
-    </form>
+      <Button type="submit" aria-label="Search button"></Button>
+    </Form>
   );
 };

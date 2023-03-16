@@ -1,8 +1,9 @@
 import { CharacterItem } from 'components/CharacterItem/CharacterItem';
+import { List } from './CharactersList.styled';
 
 export const CharactersList = ({ characters }) => {
   return (
-    <ul>
+    <List>
       {characters.map(({ id, name, species, image }) => (
         <CharacterItem
           key={id}
@@ -12,6 +13,6 @@ export const CharactersList = ({ characters }) => {
           image={image}
         />
       ))}
-    </ul>
+    </List>
   );
 };

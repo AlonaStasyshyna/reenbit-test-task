@@ -6,6 +6,7 @@ import { CharactersList } from 'components/CharactersList/CharactersList';
 import { getCharacters, searchCharacters } from 'toApi/getData';
 import { Loader } from 'components/Loader/Loader';
 import { useSearchParams } from 'react-router-dom';
+import { HomePageContainer } from './HomePage.styled';
 
 const HomePage = () => {
   const [characters, setCharacters] = useState([]);
@@ -46,10 +47,12 @@ const HomePage = () => {
     <>
       <Logo />
       <Main>
-        <SearchForm query={query} handleChange={handleChange} />
-        {isLoading && <Loader />}
-        {characters.length > 0 && <CharactersList characters={characters} />}
-        {error && <p>Ooops! Something went wrong.</p>}
+        <HomePageContainer>
+          <SearchForm query={query} handleChange={handleChange} />
+          {isLoading && <Loader />}
+          {characters.length > 0 && <CharactersList characters={characters} />}
+          {error && <p>Ooops! Something went wrong.</p>}
+        </HomePageContainer>
       </Main>
     </>
   );
