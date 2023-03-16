@@ -5,6 +5,7 @@ import { CharacterInfo } from 'components/CharacterInfo/CharacterInfo';
 import { Main } from 'components/Main/Main';
 import { Loader } from 'components/Loader/Loader';
 import { getCharacterById } from 'toApi/getData';
+import { ErrorMessage } from 'components/ErrorMessage/ErrorMessage';
 
 const CharacterPage = () => {
   const [character, setCharacter] = useState(null);
@@ -33,7 +34,7 @@ const CharacterPage = () => {
           </Main>
         </>
       )}
-      {error && <p>Ooops! Something went wrong.</p>}
+      {error && <ErrorMessage />}
     </>
   );
 };

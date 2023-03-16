@@ -1,3 +1,5 @@
+import { LoadingText } from "./Loader.styled";
+
 export const Loader = () => {
-  return <p>Loading...</p>;
+  return <LoadingText>Loading...</LoadingText>;
 };

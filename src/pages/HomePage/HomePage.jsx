@@ -7,6 +7,7 @@ import { getCharacters, searchCharacters } from 'toApi/getData';
 import { Loader } from 'components/Loader/Loader';
 import { useSearchParams } from 'react-router-dom';
 import { HomePageContainer } from './HomePage.styled';
+import { ErrorMessage } from 'components/ErrorMessage/ErrorMessage';
 
 const HomePage = () => {
   const [characters, setCharacters] = useState([]);
@@ -51,7 +52,7 @@ const HomePage = () => {
           <SearchForm query={query} handleChange={handleChange} />
           {isLoading && <Loader />}
           {characters.length > 0 && <CharactersList characters={characters} />}
-          {error && <p>Ooops! Something went wrong.</p>}
+          {error && <ErrorMessage />}
         </HomePageContainer>
       </Main>
     </>
