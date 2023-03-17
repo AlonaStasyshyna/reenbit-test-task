@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/reenbit-test-task/static/css/main.7acaea2f.css",
-    "main.js": "/reenbit-test-task/static/js/main.6d2718cd.js",
+    "main.js": "/reenbit-test-task/static/js/main.24ea1e28.js",
     "static/js/267.d2a75747.chunk.js": "/reenbit-test-task/static/js/267.d2a75747.chunk.js",
-    "static/js/821.13148808.chunk.js": "/reenbit-test-task/static/js/821.13148808.chunk.js",
+    "static/js/534.ddeeb270.chunk.js": "/reenbit-test-task/static/js/534.ddeeb270.chunk.js",
     "static/js/279.968c5919.chunk.js": "/reenbit-test-task/static/js/279.968c5919.chunk.js",
     "static/media/logo.png": "/reenbit-test-task/static/media/logo.fdb72745f596ac4a045d.png",
     "index.html": "/reenbit-test-task/index.html",
     "static/media/search-icon.svg": "/reenbit-test-task/static/media/search-icon.c77a50f238257623b5e066b03e852c00.svg",
+    "static/media/arrowBack.svg": "/reenbit-test-task/static/media/arrowBack.7ee5dd4eb1f8a8e3ef2fd62c9dcac6dc.svg",
     "main.7acaea2f.css.map": "/reenbit-test-task/static/css/main.7acaea2f.css.map",
-    "main.6d2718cd.js.map": "/reenbit-test-task/static/js/main.6d2718cd.js.map",
+    "main.24ea1e28.js.map": "/reenbit-test-task/static/js/main.24ea1e28.js.map",
     "267.d2a75747.chunk.js.map": "/reenbit-test-task/static/js/267.d2a75747.chunk.js.map",
-    "821.13148808.chunk.js.map": "/reenbit-test-task/static/js/821.13148808.chunk.js.map",
+    "534.ddeeb270.chunk.js.map": "/reenbit-test-task/static/js/534.ddeeb270.chunk.js.map",
     "279.968c5919.chunk.js.map": "/reenbit-test-task/static/js/279.968c5919.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.6d2718cd.js"
+    "static/js/main.24ea1e28.js"
   ]
 }
