@@ -18,12 +18,14 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.h1`
+  width: 312px;
   margin-bottom: 34px;
   text-align: center;
   font-weight: 400;
   line-height: calc(38 / 32);
 
   @media screen and (min-width: 548px) {
+    width: 413px;
     margin-bottom: 48px;
     font-size: 48px;
     line-height: calc(56 / 48);
