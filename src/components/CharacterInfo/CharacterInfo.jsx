@@ -1,34 +1,36 @@
+import { Img, Item, List, Span, Text, Title } from './CharacterInfo.styled';
+
 export const CharacterInfo = ({
   character: { name, status, species, type, gender, image, origin },
 }) => {
   return (
     <>
-      <img src={image} alt={name} />
-      <h1>{name}</h1>
-      <p>Informations</p>
+      <Img src={image} alt={name} />
+      <Title>{name}</Title>
+      <Text>Informations</Text>
 
-      <ul>
-        <li>
+      <List>
+        <Item>
           Gender
-          <span>{gender}</span>
-        </li>
-        <li>
+          <Span>{gender || 'unknown'}</Span>
+        </Item>
+        <Item>
           Status
-          <span>{status}</span>
-        </li>
-        <li>
+          <Span>{status || 'unknown'}</Span>
+        </Item>
+        <Item>
           Specie
-          <span>{species}</span>
-        </li>
-        <li>
+          <Span>{species || 'unknown'}</Span>
+        </Item>
+        <Item>
           Origin
-          <span>{origin.name}</span>
-        </li>
-        <li>
+          <Span>{origin.name || 'unknown'}</Span>
+        </Item>
+        <Item>
           Type
-          <span>{type}</span>
-        </li>
-      </ul>
+          <Span>{type || 'unknown'}</Span>
+        </Item>
+      </List>
     </>
   );
 };

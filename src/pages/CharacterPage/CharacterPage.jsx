@@ -6,6 +6,7 @@ import { Main } from 'components/Main/Main';
 import { Loader } from 'components/Loader/Loader';
 import { getCharacterById } from 'toApi/getData';
 import { ErrorMessage } from 'components/ErrorMessage/ErrorMessage';
+import { CharacterPageContainer } from './CharacterPage.styled';
 
 const CharacterPage = () => {
   const [character, setCharacter] = useState(null);
@@ -30,7 +31,9 @@ const CharacterPage = () => {
         <>
           <BackButton />
           <Main>
-            <CharacterInfo character={character} />
+            <CharacterPageContainer>
+              <CharacterInfo character={character} />
+            </CharacterPageContainer>
           </Main>
         </>
       )}
