@@ -39,4 +39,11 @@ export const Button = styled.button`
   border: none;
   background-color: transparent;
   background-image: url(${searchIcon});
+
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 `;

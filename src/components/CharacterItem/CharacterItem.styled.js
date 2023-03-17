@@ -9,6 +9,13 @@ export const Item = styled.li`
   border-radius: 4px;
   overflow: hidden;
 
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
   @media screen and (max-width: 547px) {
     margin-left: auto;
     margin-right: auto;

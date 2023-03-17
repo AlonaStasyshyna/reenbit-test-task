@@ -32,4 +32,11 @@ export const Button = styled.button`
 
     background-image: url(${arrowBack});
   }
+
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
 `;

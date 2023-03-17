@@ -10,6 +10,14 @@ export const Header = styled.header`
   }
 `;
 
+export const Link = styled.a`
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
 export const ImgLogo = styled.img`
   width: 100%;
   max-width: 600px;
